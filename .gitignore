@@ -1,0 +1,288 @@
+# IBM Data Engineering Course - .gitignore
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# ============================================
+# Data Files (DO NOT COMMIT LARGE DATA)
+# ============================================
+*.csv
+*.tsv
+*.json
+*.parquet
+*.avro
+*.orc
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+
+# Allow example/sample data (small files only)
+!**/examples/**/*.csv
+!**/samples/**/*.json
+!**/test-data/**/*.csv
+
+# ============================================
+# Database & Credentials
+# ============================================
+# NEVER commit credentials!
+.env
+.env.*
+*.env
+credentials.json
+secrets.yaml
+config.ini
+database.yml
+*.pem
+*.key
+*.crt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+
+# ============================================
+# Cloud & Infrastructure
+# ============================================
+# AWS
+.aws/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# Google Cloud
+gcloud/
+*.json
+service-account.json
+
+# Azure
+.azure/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# ============================================
+# Logs & Temporary Files
+# ============================================
+logs/
+*.log
+*.log.*
+airflow-logs/
+spark-warehouse/
+metastore_db/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Big Data & Spark
+# ============================================
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+_spark_metadata/
+
+# Hadoop
+*.jar
+*.war
+
+# ============================================
+# ETL & Data Pipeline
+# ============================================
+# Airflow
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+unittests.cfg
+
+# dbt
+target/
+dbt_packages/
+logs/
+.dbt/
+
+# ============================================
+# Operating System
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# IDEs & Editors
+# ============================================
+# JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.emacs.desktop
+.emacs.desktop.lock
+
+# ============================================
+# Testing & Coverage
+# ============================================
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ============================================
+# Documentation
+# ============================================
+# Sphinx documentation
+docs/_build/
+_build/
+.doctrees/
+
+# ============================================
+# Package Managers
+# ============================================
+# Node.js (if using JavaScript tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Python
+Pipfile.lock
+poetry.lock
+
+# ============================================
+# Cloud Storage & Outputs
+# ============================================
+# Local data directories
+data/raw/
+data/processed/
+data/temp/
+output/
+exports/
+
+# Allow structure documentation
+!data/README.md
+!output/README.md
+
+# ============================================
+# Notebooks (Optional - Uncomment if needed)
+# ============================================
+# Uncomment below if you don't want to track notebooks
+# *.ipynb
+
+# But DO track cleared notebooks
+# !**/examples/**/*.ipynb
+# !**/tutorials/**/*.ipynb
+
+# ============================================
+# Custom Project Ignores
+# ============================================
+# Add any project-specific files to ignore below
+scratch/
+sandbox/
+archive/
+deprecated/
+old/
+
+# Personal notes (if you want to keep private)
+# personal-notes.md
+# TODO-private.md
+
+# ============================================
+# END OF .gitignore
+# ============================================
