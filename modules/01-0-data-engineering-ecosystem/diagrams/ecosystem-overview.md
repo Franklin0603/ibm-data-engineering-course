@@ -1,3 +1,4 @@
+```mermaid
 graph TB
     subgraph "Modern Data Ecosystem"
         DS[Data Sources] --> |Extract| DR[Data Repository]
@@ -29,3 +30,4 @@ graph TB
     style Cloud fill:#ffebee
     style ML fill:#fff3e0
     style BD fill:#e0f2f1
+```
